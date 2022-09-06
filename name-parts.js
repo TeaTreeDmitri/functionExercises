@@ -13,10 +13,17 @@
 
 function fullName(lastName, firstName, middleName) {
     if (middleName) {
-       // return `My first name is ${firstName} and my second name is ${middleName} and my last name is ${lastName}`;
-       return {firstName, middleName, lastName};
+        // return `My first name is ${firstName} and my second name is ${middleName} and my last name is ${lastName}`;
+        return {
+            firstName,
+            middleName,
+            lastName
+        };
     }
-        //return `My first name is ${firstName} and my last name is ${lastName}`;
-        return {firstName, lastName};
+    //return `My first name is ${firstName} and my last name is ${lastName}`;
+    return {
+        firstName,
+        lastName
+    };
 }
-console.log(fullName("ingle","jeff", "superman"));
+console.log(fullName("ingle", "jeff", "superman"));
